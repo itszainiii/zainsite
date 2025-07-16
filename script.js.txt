@@ -1,0 +1,8 @@
+const form = document.getElementById('tiktokForm');
+const msg = document.getElementById('formMsg');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  msg.innerHTML = "<p style='color:lime;'>Data saved locally (demo only). No backend connected.</p>";
+  form.reset();
+});

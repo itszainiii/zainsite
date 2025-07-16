@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.contact {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.save-btn {
+  padding: 12px 20px;
+  background-color: #00c6ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

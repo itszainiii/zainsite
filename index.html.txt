@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>(Managed by Zain) — TikTok Link Logger</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>(Managed by Zain)</h1>
+      <p class="subheading">Effortlessly log TikTok account details and track total links.</p>
+    </header>
+    <section class="contact">
+      <span class="wa-icon"><i class="fab fa-whatsapp"></i></span>
+      <span>Any problem faced? Contact Laila on WhatsApp: <a href="https://wa.me/923110391881" target="_blank">+92 311 0391881</a></span>
+    </section>
+    <form id="tiktokForm" autocomplete="off">
+      <div class="form-group">
+        <label for="wa-number">WhatsApp Number</label>
+        <div class="input-icon">
+          <i class="fab fa-whatsapp"></i>
+          <input type="text" id="wa-number" name="wa-number" placeholder="Enter WhatsApp Number" required pattern="^\+?\d{7,15}$">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tt-username">TikTok Username</label>
+        <div class="input-icon">
+          <i class="fab fa-tiktok"></i>
+          <input type="text" id="tt-username" name="tt-username" placeholder="Enter TikTok Username" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="device-name">Device Name</label>
+        <div class="input-icon">
+          <i class="fas fa-mobile-alt"></i>
+          <input type="text" id="device-name" name="device-name" placeholder="e.g. iPhone 14 Pro" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="link-count">Total Link Count</label>
+        <div class="input-icon">
+          <i class="fas fa-link"></i>
+          <input type="number" id="link-count" name="link-count" placeholder="Enter total links" required min="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="screenshot">Upload Screenshot (Optional)</label>
+        <div class="input-icon">
+          <i class="fas fa-image"></i>
+          <input type="file" id="screenshot" name="screenshot" accept="image/*">
+        </div>
+      </div>
+      <button type="submit" class="save-btn">
+        <i class="fas fa-save"></i> Save Data
+      </button>
+    </form>
+    <div id="formMsg"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
